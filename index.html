@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortes Engenharia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #5c7bf4;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    nav a:hover {
+      background-color: #5c7bf4;
+    }
+    .hero {
+      background-image: url('https://fortes.ind.br/wp-content/uploads/2022/08/IMG-20220504-WA0002.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 150px 20px;
+      margin-bottom: 20px;
+      height: 800px;
+    }
+    .services {
+      background-image: url('https://fortes.ind.br/wp-content/uploads/2021/03/Sede-FORTES-obra8-1024x734.png');
+      height: 250px;
+      background-color: #f4f4f4;
+      padding: 50px 20px;
+      margin: 50px;
+      text-align: center;
+      background-repeat: no-repeat;
+    }
+    .portfolio {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .portfolio img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+    }
+    .contact {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #5c7bf4;
+      color: #fff;
+    }
+    footer {
+      background-color: #444;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .login-button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .login-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fortes Engenharia</h1>
+    <p>Nossos propósitos refletem o jeito sustentável de ser FORTES.</p>
+    <a href="fortes_login.html" class="login-button">Login</a>
+  </header>
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#services">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contact">Contato</a>
+  </nav>
+  <section id="home" class="hero">
+    <h2>Projetando Espaços, Criando Sonhos</h2>
+    <p>Seu parceiro confiável em soluções de engenharia e arquitetura.</p>
+    <a href="#contact" style="background-color: #fff; color: #333; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Entre em Contato</a>
+  </section>
+  <section id="services" class="services">
+    <h1>Nossa História</h1>
+    <i>Toda empresa tem uma história. Saber como ela surgiu faz toda a diferença para entender seus valores e suas crenças.</i>
+    <h4>A história da FORTES nasceu do sonho de dois jovens amigos que queriam fazer diferente: empreender no mercado da construção civil, valorizar e transformar a vida das pessoas e trabalhar comprometidos com a segurança. E foi assim que, no dia 1 de setembro de 1986, os jovens engenheiros Gian Franco Mazzoli e Ricardo Antonio Abrahão Netto, decidiram tornar esse sonho realidade e criaram a FORTES ENGENHARIA.</h4>
+    <p></p>
+    <p></p>
+  </section>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <section id="portfolio" class="portfolio">
+    <h2>Projetos e Parcerias</h2>
+    <div>
+      <img src="https://fortes.ind.br/wp-content/uploads/2023/04/Programa-doacao-de-cesta-275x300.png" alt="Projeto 1">
+      <img src="https://fortes.ind.br/wp-content/uploads/2024/05/Camada-1-1337x1536.jpg" alt="Projeto 2">
+      <img src="https://fortes.ind.br/wp-content/uploads/2021/03/cereais.png" alt="Projeto 3">
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Entre em Contato</h2>
+    <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
+    <form action="enviar_formulario_contato.php" method="post">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <br><br>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <br><br>
+      <textarea name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
+      <br><br>
+      <button type="submit" style="background-color: #fff; color: #333; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px;">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2021 Fortes Engenharia. Todos os direitos reservados. </p>
+  </footer>
+</body>
+</html>
