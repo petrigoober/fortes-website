@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal do Trabalhador</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/60da566315.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="profile">
+        <img src="https://pbs.twimg.com/media/EEUy6MCU0AErfve.png" alt="Foto de Perfil">
+        <span>Usuário 1</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="logo">
+        <img src="https://fortes.ind.br/wp-content/uploads/2022/08/FORTES_LOGOMARCA_moldura-e1660776738611.png" alt="Logo">
+      </div>
+      <div class="actions">
+        <button class="button-small-2">...</button>
+        <button onclick="sair()" class="button-small">SAIR</button>
+      </div>
+    </div>
+    <div class="flex-row">
+      <div class="sidebar">
+        <button onclick="inscricoes()"><i class="fas fa-bookmark"></i> INSCRIÇÕES</button>
+        <button onclick="instituicoes()"><i class="fas fa-landmark"></i> INSTITUIÇÕES</button>
+        <button onclick="config()"><i class="fas fa-cog"></i> CONFIGURAÇÕES</button>
+        <button onclick="cadastrar()"><i class="fas fa-plus-circle"></i> CADASTRAR INSTITUIÇÃO</button>
+      </div>
+      <div class="content">
+        <div class="form-section">
+          <div class="form-column">
+            <h3>DADOS DO PROPRIETÁRIO</h3>
+            <input class="input-base" type="text" placeholder="NOME COMPLETO">
+            <input class="input-base" type="text" placeholder="CPF">
+            <input class="input-base" type="text" placeholder="TELEFONE">
+            <input class="input-base" type="email" placeholder="EMAIL">
+          </div>
+          <div class="form-column">
+            <h3>INFORMAÇÕES SOBRE O PROJETO</h3>
+            <textarea class="textarea" placeholder="CONTE-NOS UM POUCO DA HISTÓRIA"></textarea>
+            <input class="input-base" type="email" placeholder="EMAIL DO PROJETO">
+            <input class="input-base" type="text" placeholder="TELEFONE DO PROJETO">
+          </div>
+        </div>
+        <div class="form-section">
+          <div class="form-column">
+            <h3>INFORMAÇÕES DA INSTITUIÇÃO</h3>
+            <input class="input-base" type="text" placeholder="ESTADO">
+            <input class="input-base" type="text" placeholder="CEP">
+            <input class="input-base" type="text" placeholder="CIDADE">
+            <input class="input-base" type="text" placeholder="RUA/AVENIDA">
+            <input class="input-base" type="text" placeholder="NÚMERO">
+          </div>
+          <div class="form-column">
+            <h3>IMAGENS DO PROJETO</h3>
+            <input type="file">
+            <button onclick="registrarInst()" class="button-large-3">FINALIZAR CADASTRO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function inscricoes() {
+      window.location.href = "subscriptions.html";
+    }
+    function instituicoes() {
+      window.location.href = "dashboard.html";
+    }
+    function config() {
+      window.location.href = "config.html";
+    }
+    function cadastrar() {
+      window.location.href = "add.html";
+    }
+    function sair() {
+      window.location.href = "../index.html";
+    }
+    function registrarInst() {
+      alert("Sua inscrição foi concluída!\nUm e-mail de confirmação será enviado em breve.");
+      window.location.href = "dashboard.html";
+    }
+  </script>
+</body>
+</html>
